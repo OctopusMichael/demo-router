@@ -11,7 +11,7 @@ const Home = () => {
         <div className="container-fluid">
           <div className="row">
             <div className="col-12 col-md-6">
-              <h1 className="text-center text-white   first-title">
+              <h1 className="text-center text-white first-title">
                 Tales from the Algorithm: Stories Created by Artificial
                 Intelligence
               </h1>
