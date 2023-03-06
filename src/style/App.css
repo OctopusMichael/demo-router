@@ -1,16 +1,19 @@
-*{
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: black;
-  overflow: hidden;
-
+  overflow-x: hidden;
+  font-family: "Rock Salt", cursive;
+  scroll-behavior: smooth;
 }
 
-.section-error{
+.section-error {
   background-color: cadetblue;
   display: flex;
   flex-direction: column;
@@ -20,192 +23,433 @@ body{
   width: auto;
 }
 
-
-
 .section-container-home {
-  background-color: rgb(19, 236, 252);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh; 
+  height: 100vh;
+  z-index: -1;
 }
-.section-container-skills{
-  background-color: rgb(180, 247, 24);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90vh; 
-}
-.section-container-contact{
+
+.section-container-contact {
   background-color: rgb(66, 53, 102);
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 90vh; 
+  height: 90vh;
 }
 
 /**********      Navbar    ***********/
 
-
-.section-logo{
-  margin-left: 10%
+.section-logo {
+  margin-left: 10%;
 }
 
-.section-navbar{
-  background-color: #0000ff;
+.section-navbar {
+  background-image: url(https://media4.giphy.com/media/3oKIPwaiK7xSA4zUek/giphy.gif?cid=ecf05e47yapz8q315r9t1fdt0537r7rvdrd17vvh8vc04jqp&rid=giphy.gif&ct=g);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 10vh;
-
 }
-.section-navbar img{ 
+.section-navbar img {
   height: 10vh;
-  
 }
 
-.navbar-menu{
+.navbar-menu {
   display: none;
 }
 
-.menu{
+.menu {
   background-color: white;
   margin-right: 10px;
 }
 .navbar-menu-second {
   position: absolute;
   right: 0;
-  top:0;
+  top: 0;
   height: 100vh;
-  background-color: rgba(7, 7, 7, 0.219);
+  background-color: rgba(253, 252, 252, 0.199);
   transition: all 1s ease;
   width: 100vw;
   display: flex;
   justify-content: end;
-  
-  
+  z-index: 2;
 }
 .navbar-menu-second.active {
   position: absolute;
   right: 0px;
-  top:0;
+  top: 0;
   height: 100vh;
   background-color: rgba(213, 235, 227, 0.336);
   width: 0vw;
-  
 }
 
-.section-menu-second{
+.section-menu-second {
   width: 50%;
-  background-color: rgb(62, 199, 35);
-  
-
+  background-color: rgb(0, 0, 0);
 }
 
-.btn-open{
+.btn-open {
   height: 50px;
   width: 50px;
-  background-color: #000000;
-  color: aliceblue;
-
-
+  background-color: black ;
+  color: white;
+ 
 }
 
-.btn-close{
+.btn-closee {
   height: 50px;
-  width: 50px; 
-  margin:  20px 0px 0px 65%;
-
+  width: 50px;
+  margin: 10px 0px 0px 65%;
+  color: white !important;
+  background-color: transparent;
 }
-.btn-close:hover{
-  background-color: rgba(0, 255, 255, 0.616);
+.btn-closee:hover {
+  background-color: rgba(255, 255, 255, 0.616);
 }
-li{
+li {
   list-style: none;
   width: 200px;
   margin: auto;
+  color: white;
 }
 
-
-.btn-menu{
+.btn-menu {
   margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 150px;
   border: none;
-
+  color: rgba(0, 255, 255, 0.616);
 }
 
-.btn-menu:hover{
+.btn-menu:hover {
   background-color: rgba(0, 255, 255, 0.61);
 }
 
+/****************************** Home page ******************************/
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.first-title {
+ margin: 20px 0px;
+ transition: all 1s ease;
+ 
+
+}
+.first-title:hover {
+ color:#08fcef !important;
+ 
+
+}
+.second-title {
+  transition: all 1s ease;
+ 
+
+}
+.second-title:hover {
+ color:#08fcef !important;
+ 
+
+}
+.article{
+  margin-top: 20px;
+  color:white;
+  transition: all 1s ease;
+}
+.article:hover{
+  margin-top: 20px;
+  color:rgb(21, 253, 222);
+}
 
 
- 
-/* Custom, iPhone Retina */ 
-@media only screen and (min-width : 320px) {
-    
+/******************************* Tales*********************************** */
+
+.section-container-tales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
- 
-/* Extra Small Devices, Phones */ 
-@media only screen and (min-width : 480px) {
+.section-container-tales p {
+  text-align: start;
+  color: white;
+  padding: 10px 15px;
+  transition: all 0,5s ease-in;
+  
  
 }
+.section-container-tales p:hover {
+  text-align: start;
+  color: rgb(8, 218, 255);
+  padding: 10px 15px;
  
+}
+
+.img-left {
+  height: 350px;
+}
+.img-right {
+  height: 350px;
+}
+
+.tales-title{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0px;
+  color: white;
+  transition: all 0,5s ease-in;
+
+  
+  
+}
+.tales-title:hover{
+
+  
+  color: rgb(12, 236, 252);
+  
+  
+}
+/* * * * * * * * * * * * * * * * * * Footer * * * * * * * * * * * * * *  */
+
+footer {
+  margin-top: 15px;
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 0.445);
+}
+
+footer h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  color: rgb(17, 104, 155);
+  text-decoration: none;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer ul a {
+  font-size: 20px;
+  color: white !important ;
+  margin: 0px 20px;
+  transition: all 1s ease;
+}
+footer ul a:hover {
+  font-size: 30px;
+  color: #f03d78 !important ;
+  margin: 0px 20px;
+}
+
+.btn-back{
+  background-color: aqua;
+  color: rgb(0, 0, 0);
+  width: 100px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 5px 20px;
+  height: 30px;
+  
+  
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+}
+
 /* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-  .menu{
+@media only screen and (min-width: 768px) {
+  /****************************** Home page ******************************/
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .first-title {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 150px;
+    transition: all 2s ease;
+    height: 50vh;
+
+  }
+  .second-title {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 2s ease;
+    
+    
+  }
+
+  .first-title:hover{
+    height: 100vh;
+
+   background-color:#f03d78;
+   
+  }
+  .second-title:hover {
+    justify-content: center;
+    background-color:#fa548b;
+   
+  }
+
+  .article {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    transition: all 1s ease;
+    padding: 100px;
+    color: white;
+    
+   
+  }
+  .article:hover {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    background-color: #8b2849;
+    color: white;
+    
+  }
+
+
+  /* ****************** TALES PAGE**************** */
+  
+.section-container-tales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  width: auto;
+}
+.section-container-tales p {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 100px;
+ 
+}
+.section-container-tales p:hover{
+  color: rgb(12, 236, 252);
+}
+
+.img-left {
+  height: 50vh;
+  transition: all 0.5s ease;
+}
+.img-left:hover {
+  height: 100vh;
+}
+.img-right {
+  height: 50vh;
+  transition: all 0.5s ease;
+}
+.img-right:hover {
+  height: 100vh;
+}
+
+.tales-title{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 100px;
+  color: white;
+  transition: all 0,5s ease-in;
+  
+  
+}
+.tales-title:hover{
+
+  
+  color: rgb(12, 236, 252);
+  
+  
+}
+
+  /********************** navbar ****************/
+  .menu {
     display: none;
   }
-  .navbar-menu{
+  .navbar-menu {
     display: block;
     margin-right: 10%;
-    
-    
   }
   .navbar-menu-second {
     position: absolute;
     right: 0px;
-    top:0;
+    top: 0;
     height: 100vh;
     width: 0vw;
-   
   }
-  .btn{
+  .btn {
     background-color: transparent;
     border: none;
     margin-right: 20px;
     width: 120px;
     color: white;
-   
   }
-  .btn:hover{
-    background-color: black ;
+  .btn:hover {
+    background-color: black;
     border: none;
     margin-right: 20px;
     color: white;
   }
-  .btn:hover{
-    background-color: black ;
+  .btn:hover {
+    background-color: black;
     border: none;
     margin-right: 20px;
     color: white;
   }
+}
 
- 
-  
- 
-  
-}
- 
 /* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
- 
+@media only screen and (min-width: 992px) {
 }
- 
+
 /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
- 
+@media only screen and (min-width: 1200px) {
 }

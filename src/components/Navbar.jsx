@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "../images/octopuspng 1.svg";
+
 import { NavLink } from "react-router-dom";
 import {
   IoMenuSharp,
@@ -7,13 +8,15 @@ import {
   IoLogoReact,
   IoMailSharp,
   IoLogoJavascript,
+  IoCloseSharp,
+  IoSad,
  
 } from "react-icons/io5";
 import {  IoMdBriefcase } from "react-icons/io";
 
 
 const Navbar = () => {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
 
   const handleShow = () => {
     setShow(!show);
@@ -21,7 +24,7 @@ const Navbar = () => {
 
   return (
     <header>
-      <div className="container section-navbar">
+      <div className="container-fluid section-navbar">
         <div className="section-logo ">
           <img className="logo" src={logo} />
         </div>
@@ -35,17 +38,17 @@ const Navbar = () => {
           <NavLink to="/" className="btn ">
             Home  &nbsp; <IoHomeSharp/>
           </NavLink>
-          <NavLink to="skills" className="btn ">
-            Skills &nbsp;
-            <IoLogoJavascript/>
+          <NavLink to="tales" className="btn ">
+            Tales &nbsp;
+            <IoSad/>
           </NavLink>
-          <NavLink to="portfolio" className="btn ">
-            Portfolio &nbsp;
+          <NavLink to="art" className="btn ">
+            Art &nbsp;
             <IoMdBriefcase/>
             
           </NavLink>
           <NavLink to="contact" className="btn ">
-            Contact &nbsp;
+            email &nbsp;
             <IoMailSharp/>
           </NavLink>
         </div>
@@ -54,8 +57,8 @@ const Navbar = () => {
           className={show ? "navbar-menu-second active" : "navbar-menu-second"}
         >
           <div className="section-menu-second">
-            <button onClick={handleShow} className="btn-close ">
-              {" "}
+            <button onClick={handleShow} className="btn-closee ">
+              <IoCloseSharp/>
             </button>
             <ul>
               <li>
@@ -68,26 +71,26 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink  onClick={handleShow} to="skills" className="btn btn-menu">
-                  <div className="m-auto">Skills</div>
+                <NavLink  onClick={handleShow} to="tales" className="btn btn-menu">
+                  <div className="m-auto">Tales</div>
                   <div>
-                    <IoLogoReact />
+                    <IoSad/>
                   </div>
                 </NavLink>
               </li>
               <li>
                 <NavLink  onClick={handleShow} to="contact" className="btn btn-menu">
-                  <div className="m-auto">Portfolio</div>
+                  <div className="m-auto">Art</div>
                   <div>
-                    <IoMdBriefcase />
+                  <IoMdBriefcase/>
                   </div>
                 </NavLink>
               </li>
               <li>
                 <NavLink  onClick={handleShow} to="contact" className="btn btn-menu">
-                  <div className="m-auto">Contact</div>
+                  <div className="m-auto">Email</div>
                   <div>
-                    <IoMailSharp />
+                  <IoMailSharp/>
                   </div>
                 </NavLink>
               </li>

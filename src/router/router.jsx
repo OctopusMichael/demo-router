@@ -4,7 +4,8 @@ import Root from '../layaout/Root'
 import Contact from '../pages/Contact'
 import Home from '../pages/Home'
 import NotFound from '../pages/NotFound'
-import Skills from '../pages/Skills'
+import Tales from '../pages/Tales'
+import Skills from '../pages/Tales'
 export const router = createBrowserRouter ([
   {
     path : "/",
@@ -18,14 +19,13 @@ export const router = createBrowserRouter ([
         
       },
       {
-       
-        path : 'skills',
-        element : <Skills/>,
+        path : 'tales',
+        element : <Tales/>,
         
       },
       {
         
-        path : 'contact',
+        path : 'email',
         element : <Contact/>,
         
       },

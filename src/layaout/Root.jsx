@@ -1,5 +1,6 @@
 import React from "react";
 import { Outlet, useNavigation } from "react-router-dom";
+import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 
 
@@ -10,13 +11,13 @@ const Root = () => {
   return (
     <>
       <Navbar/>
-      <main className="container-fluid ">
+      <main className="container-fluid  ">
         {navigate.state == "loading" && (
           <div className="alert alert-info my-5"> loading... </div>
         )}
         <Outlet/>
       </main>
-      
+      <Footer/>
      
     </>
   );
