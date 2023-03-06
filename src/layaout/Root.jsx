@@ -10,8 +10,9 @@ const Root = () => {
 
   return (
     <>
+
       <Navbar/>
-      <main className="container-fluid container-layaout  ">
+      <main className="container-fluid  ">
         {navigate.state == "loading" && (
           <div className="alert alert-info my-5"> loading... </div>
         )}
