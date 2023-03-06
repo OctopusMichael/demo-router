@@ -5,9 +5,7 @@ import { NavLink } from "react-router-dom";
 import {
   IoMenuSharp,
   IoHomeSharp,
-  IoLogoReact,
   IoMailSharp,
-  IoLogoJavascript,
   IoCloseSharp,
   IoSad,
  
