@@ -81,14 +81,14 @@ body {
   width: 100vw;
   display: flex;
   justify-content: end;
-<<<<<<< HEAD
+
   z-index: 2;
   overflow: hidden;
-=======
+
   z-index: 3;
   overflow-x: hidden;
   
->>>>>>> 40f93064d82bb3853e627a338db331a8ab262dc9
+
 }
 .navbar-menu-second.active {
   position: absolute;
