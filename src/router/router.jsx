@@ -3,6 +3,8 @@ import {createBrowserRouter} from 'react-router-dom'
 import Root from '../layaout/Root'
 import Contact from '../pages/Contact'
 import Home from '../pages/Home'
+import NotFound from '../pages/NotFound'
+
 import Tales from '../pages/Tales'
 
 export const router = createBrowserRouter ([
@@ -10,7 +12,7 @@ export const router = createBrowserRouter ([
   
     path : "/",
     element : <Root/>,
-    errorElement : <Home/>,
+    errorElement:<NotFound/>,
     children : [
       {
         index: true,

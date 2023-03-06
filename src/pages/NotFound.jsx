@@ -6,7 +6,8 @@ import { BsCaretLeft } from "react-icons/bs";
 const NotFound = () => {
   return (
     <>
-    <header>
+  
+   <div>
       <div className="container-fluid">
         <div className="section-error">
           <img src={logo} />
@@ -18,7 +19,8 @@ const NotFound = () => {
         </div>
       </div>
 
-    </header>
+
+   </div>
     </>
   );
 };
