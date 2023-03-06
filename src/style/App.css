@@ -9,10 +9,13 @@
 
 body {
   background-color: black;
-  overflow-x: hidden;
   font-family: 'Kanit', sans-serif;
   scroll-behavior: smooth;
+  overflow-x:hidden ;
+ 
 }
+
+
 
 .section-error {
   background-color: cadetblue;
@@ -29,7 +32,7 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  z-index: -1;
+  overflow-x: hidden;
 }
 
 .section-container-contact {
@@ -72,14 +75,20 @@ body {
   position: absolute;
   right: 0;
   top: 0;
-  height: 100vh;
+  height: 150vh;
   background-color: rgba(253, 252, 252, 0.199);
   transition: all 1s ease;
   width: 100vw;
   display: flex;
   justify-content: end;
+<<<<<<< HEAD
   z-index: 2;
   overflow: hidden;
+=======
+  z-index: 3;
+  overflow-x: hidden;
+  
+>>>>>>> 40f93064d82bb3853e627a338db331a8ab262dc9
 }
 .navbar-menu-second.active {
   position: absolute;
@@ -91,8 +100,11 @@ body {
 }
 
 .section-menu-second {
-  width: 50%;
   background-color: rgb(0, 0, 0);
+  position: absolute;
+  right: 0;
+  height: 100%;
+ 
 }
 
 .btn-open {

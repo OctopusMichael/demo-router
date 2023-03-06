@@ -10,6 +10,7 @@ const Root = () => {
 
   return (
     <>
+
       <Navbar/>
       <main className="container-fluid  ">
         {navigate.state == "loading" && (
