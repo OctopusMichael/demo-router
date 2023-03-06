@@ -11,7 +11,7 @@ const NotFound = () => {
         <div className="section-error">
           <img src={logo} />
            <h1>404 Not Found</h1>
-          <NavLink to="/" className="btn-back ">
+          <NavLink to="/home" className="btn-back ">
             
             Back <BsCaretLeft />
           </NavLink>

@@ -33,7 +33,7 @@ const Navbar = () => {
           </button>
         </div>
         <div className="navbar-menu ms-auto ">
-          <NavLink to="/" className="btn ">
+          <NavLink to="/home" className="btn ">
             Home  &nbsp; <IoHomeSharp/>
           </NavLink>
           <NavLink to="tales" className="btn ">
@@ -61,7 +61,7 @@ const Navbar = () => {
             <ul>
               <li>
                 {" "}
-                <NavLink  onClick={handleShow} to="/" className="btn btn-menu">
+                <NavLink  onClick={handleShow} to="/home" className="btn btn-menu">
                   <div className="m-auto">Home</div>
                   <div>
                     <IoHomeSharp />
