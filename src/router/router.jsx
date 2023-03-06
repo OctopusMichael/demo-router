@@ -5,9 +5,10 @@ import Contact from '../pages/Contact'
 import Home from '../pages/Home'
 import NotFound from '../pages/NotFound'
 import Tales from '../pages/Tales'
-import Skills from '../pages/Tales'
+
 export const router = createBrowserRouter ([
   {
+  
     path : "/",
     element : <Root/>,
     errorElement : <NotFound/>,

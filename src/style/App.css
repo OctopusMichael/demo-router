@@ -189,10 +189,9 @@ li {
  
 }
 .section-container-tales p:hover {
-  text-align: start;
+  
   color: rgb(8, 218, 255);
-  padding: 10px 15px;
- 
+  
 }
 
 .img-left {
@@ -359,7 +358,7 @@ footer ul a:hover {
   height: auto;
   width: auto;
 }
-.section-container-tales p {
+.section-container-tales p{
   color: white;
   display: flex;
   justify-content: center;
@@ -368,11 +367,8 @@ footer ul a:hover {
   width: 100%;
   text-align: center;
   padding: 100px;
- 
 }
-.section-container-tales p:hover{
-  color: rgb(12, 236, 252);
-}
+
 
 .img-left {
   height: 50vh;
@@ -403,8 +399,6 @@ footer ul a:hover {
   
 }
 .tales-title:hover{
-
-  
   color: rgb(12, 236, 252);
   
   
