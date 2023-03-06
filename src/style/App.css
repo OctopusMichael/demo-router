@@ -79,6 +79,7 @@ body {
   display: flex;
   justify-content: end;
   z-index: 2;
+  overflow: hidden;
 }
 .navbar-menu-second.active {
   position: absolute;
