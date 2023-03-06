@@ -23,7 +23,9 @@ const Navbar = () => {
     <header>
       <div className="container-fluid section-navbar">
         <div className="section-logo ">
+        <NavLink to="/" onClick={handleShow}>
           <img className="logo" src={logo} />
+          </NavLink>
         </div>
         <div className="menu ms-auto">
           <button onClick={handleShow} className=" btn-open">

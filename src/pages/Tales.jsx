@@ -1,12 +1,27 @@
-import React from "react";
+import React, {useState} from "react";
 import aki from "../images/wow3.png";
 import akii from "../images/wow.png";
 import ai from "../images/AIKaito.png";
+import lofi from "../music/lofi new.ogg"
+import ReactHowler from "react-howler";
+import {IoVolumeMuteSharp, IoVolumeHighSharp } from "react-icons/io5";
 
 const Tales = () => {
+  const [muted, setMuted] = useState(false);
+
+  const handlerMuted = () =>{
+    setMuted(!muted)
+  }
   return (
     <>
+     <ReactHowler
+              src={lofi}
+              playing={true}
+              loop={true}
+              mute={muted}
+            />
       <section>
+        <button onClick={handlerMuted} className="btn btn-primary boton-magic">  { muted ? <IoVolumeMuteSharp/> : <IoVolumeHighSharp/> } </button>
         <div className="container-fluid section-container-tales ">
           <div className="row">
             <div className="col-12 col-md-6 order-1 order-md-1 d-flex justify-content-center order-1">

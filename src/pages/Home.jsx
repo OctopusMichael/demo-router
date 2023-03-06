@@ -1,11 +1,11 @@
 import React from "react";
 import { Parallax } from "react-parallax";
-
 import handdown from "../images/nitish-goswami-cNA-klOAdfM-unsplash.jpg";
 import handup from "../images/nitish-goswami-0DrOxIiOu0Q-unsplash.jpg";
 
 const Home = () => {
   return (
+    
     <>
       <section>
         <div className="container-fluid">

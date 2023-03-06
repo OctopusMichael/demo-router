@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;800&display=swap");
 
 * {
   margin: 0;
@@ -9,22 +9,50 @@
 
 body {
   background-color: black;
-  font-family: 'Kanit', sans-serif;
+  font-family: "Kanit", sans-serif;
   scroll-behavior: smooth;
-  overflow-x:hidden ;
- 
+  overflow-x: hidden;
 }
 
-
-
 .section-error {
-  background-color: cadetblue;
+  background-image: url(https://media4.giphy.com/media/3oKIPwaiK7xSA4zUek/giphy.gif?cid=ecf05e47yapz8q315r9t1fdt0537r7rvdrd17vvh8vc04jqp&rid=giphy.gif&ct=g);
+  background-repeat: repeat;
+  background-size: cover;
+  position: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
   width: auto;
+}
+
+.first-log {
+  width: 400px;
+  height: 300px;
+  color: rgb(8, 218, 255) !important;
+}
+.first-log:hover {
+  width: 500px;
+  height: 500px;
+  color: rgb(8, 218, 255) !important;
+}
+
+.boton-intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  background-color: #d30247 !important;
+  transition: all 1s ease;
+  padding: 10px 10px;
+  color: #000000 !important;
+  font-size: 50px;
+}
+.boton-intro:hover {
+  background-color: #0202028a !important;
+  color: white !important ;
 }
 
 .section-container-home {
@@ -84,8 +112,6 @@ body {
 
   z-index: 3;
   overflow-x: hidden;
-  
-
 }
 .navbar-menu-second.active {
   position: absolute;
@@ -101,17 +127,15 @@ body {
   position: absolute;
   right: 0;
   height: 100%;
- 
 }
 
 .btn-open {
   height: 50px;
   width: 50px;
-  background-color: black ;
+  background-color: black;
   color: white;
- 
 }
- 
+
 .btn-closee {
   height: 50px;
   width: 50px;
@@ -153,36 +177,27 @@ li {
 }
 
 .first-title {
- margin: 20px 0px;
- transition: all 1s ease;
- 
-
+  margin: 20px 0px;
+  transition: all 1s ease;
 }
 .first-title:hover {
- color:#08fcef !important;
- 
-
+  color: #08fcef !important;
 }
 .second-title {
   transition: all 1s ease;
- 
-
 }
 .second-title:hover {
- color:#08fcef !important;
- 
-
+  color: #08fcef !important;
 }
-.article{
+.article {
   margin-top: 20px;
-  color:white;
+  color: white;
   transition: all 1s ease;
 }
-.article:hover{
+.article:hover {
   margin-top: 20px;
-  color:rgb(21, 253, 222);
+  color: rgb(21, 253, 222);
 }
-
 
 /******************************* Tales*********************************** */
 
@@ -195,14 +210,10 @@ li {
   text-align: start;
   color: white;
   padding: 10px 15px;
-  transition: all 0,5s ease-in;
-  
- 
+  transition: all 0, 5s ease-in;
 }
 .section-container-tales p:hover {
-  
   color: rgb(8, 218, 255);
-  
 }
 
 .img-left {
@@ -212,7 +223,7 @@ li {
   height: 350px;
 }
 
-.tales-title{
+.tales-title {
   height: 100%;
   width: 100%;
   display: flex;
@@ -221,17 +232,10 @@ li {
   text-align: center;
   padding: 0px;
   color: white;
-  transition: all 0,5s ease-in;
-
-  
-  
+  transition: all 0, 5s ease-in;
 }
-.tales-title:hover{
-
-  
+.tales-title:hover {
   color: rgb(12, 236, 252);
-  
-  
 }
 /* * * * * * * * * * * * * * * * * * Footer * * * * * * * * * * * * * *  */
 
@@ -272,7 +276,7 @@ footer ul a:hover {
   margin: 0px 20px;
 }
 
-.btn-back{
+.btn-back {
   background-color: aqua;
   color: rgb(0, 0, 0);
   width: 100px;
@@ -280,8 +284,6 @@ footer ul a:hover {
   font-family: Arial, Helvetica, sans-serif;
   padding: 5px 20px;
   height: 30px;
-  
-  
 }
 
 /* Custom, iPhone Retina */
@@ -304,7 +306,6 @@ footer ul a:hover {
   }
 
   .first-title {
-    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -312,7 +313,6 @@ footer ul a:hover {
     padding: 150px;
     transition: all 2s ease;
     height: 50vh;
-
   }
   .second-title {
     height: 20vh;
@@ -320,20 +320,16 @@ footer ul a:hover {
     justify-content: center;
     align-items: center;
     transition: all 2s ease;
-    
-    
   }
 
-  .first-title:hover{
+  .first-title:hover {
     height: 100vh;
 
-   background-color:#f03d78;
-   
+    background-color: #f03d78;
   }
   .second-title:hover {
     justify-content: center;
-    background-color:#fa548b;
-   
+    background-color: #fa548b;
   }
 
   .article {
@@ -345,8 +341,6 @@ footer ul a:hover {
     transition: all 1s ease;
     padding: 100px;
     color: white;
-    
-   
   }
   .article:hover {
     height: 100vh;
@@ -356,64 +350,57 @@ footer ul a:hover {
     font-size: 30px;
     background-color: #8b2849;
     color: white;
-    
   }
 
-
   /* ****************** TALES PAGE**************** */
-  
-.section-container-tales {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  width: auto;
-}
-.section-container-tales p{
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-  padding: 100px;
-}
 
+  .section-container-tales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+  }
+  .section-container-tales p {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding: 100px;
+  }
 
-.img-left {
-  height: 50vh;
-  transition: all 0.5s ease;
-}
-.img-left:hover {
-  height: 100vh;
-}
-.img-right {
-  height: 50vh;
-  transition: all 0.5s ease;
-}
-.img-right:hover {
-  height: 100vh;
-}
+  .img-left {
+    height: 50vh;
+    transition: all 0.5s ease;
+  }
+  .img-left:hover {
+    height: 100vh;
+  }
+  .img-right {
+    height: 50vh;
+    transition: all 0.5s ease;
+  }
+  .img-right:hover {
+    height: 100vh;
+  }
 
-.tales-title{
-  height: 100%;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  padding: 100px;
-  color: white;
-  transition: all 0,5s ease-in;
-  
-  
-}
-.tales-title:hover{
-  color: rgb(12, 236, 252);
-  
-  
-}
+  .tales-title {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 100px;
+    color: white;
+    transition: all 0, 5s ease-in;
+  }
+  .tales-title:hover {
+    color: rgb(12, 236, 252);
+  }
 
   /********************** navbar ****************/
   .menu {
