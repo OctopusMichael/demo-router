@@ -272,7 +272,8 @@ li {
   text-align: center;
   padding: 0px;
   color: white;
-  transition: all 0, 5s ease-in;
+  transition: all 0, 1s ease;
+ 
 }
 .tales-title:hover {
   color: rgb(12, 236, 252);

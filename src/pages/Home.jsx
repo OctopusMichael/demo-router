@@ -4,7 +4,7 @@ import handdown from "../images/nitish-goswami-cNA-klOAdfM-unsplash.jpg";
 import handup from "../images/nitish-goswami-0DrOxIiOu0Q-unsplash.jpg";
 import ReactHowler from "react-howler";
 import {IoVolumeMuteSharp, IoVolumeHighSharp } from "react-icons/io5";
-import homelofi from  "../music/homelofi.ogg"
+import homelofi from  "../music/homelofi2023.ogg"
 
 const Home = () => {
 
