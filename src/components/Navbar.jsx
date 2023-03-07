@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../images/octopuspng 1.svg";
+import logo from "../images/octopus-white.svg";
 import { NavLink } from "react-router-dom";
 import {
   IoMenuSharp,
@@ -10,6 +10,22 @@ import {
  
 } from "react-icons/io5";
 import {  IoMdBriefcase } from "react-icons/io";
+
+const active = {
+  color: 'aqua',
+}
+
+const disactive = {
+  default: {
+      color: "#eee"
+  },
+  Hovered: {
+      color: 'red'
+  }
+
+}
+
+
 
 
 const Navbar = () => {
@@ -23,8 +39,8 @@ const Navbar = () => {
     <header>
       <div className="container-fluid section-navbar">
         <div className="section-logo ">
-        <NavLink to="/" onClick={handleShow}>
-          <img className="logo" src={logo} />
+        <NavLink to="/demo-router/"  >
+          <img onClick={handleShow} className="logo mt-2  " src={logo} />
           </NavLink>
         </div>
         <div className="menu ms-auto">
@@ -34,19 +50,20 @@ const Navbar = () => {
           </button>
         </div>
         <div className="navbar-menu ms-auto ">
-          <NavLink to="/" className="btn ">
+          <NavLink  to="/demo-router/" style={({ isActive }) => isActive ? active : disactive} className="btn"
+          >
             Home  &nbsp; <IoHomeSharp/>
           </NavLink>
-          <NavLink to="tales" className="btn ">
+          <NavLink to="/demo-router/tales"  style={({ isActive }) => isActive ? active : disactive} className="btn ">
             Tales &nbsp;
             <IoSad/>
           </NavLink>
-          <NavLink to="art" className="btn ">
+          <NavLink to="/demo-router/art"  style={({ isActive }) => isActive ? active : disactive} className="btn ">
             Art &nbsp;
             <IoMdBriefcase/>
             
           </NavLink>
-          <NavLink to="contact" className="btn ">
+          <NavLink to="/demo-router/email"  style={({ isActive }) => isActive ? active : disactive} className="btn ">
             email &nbsp;
             <IoMailSharp/>
           </NavLink>
@@ -70,7 +87,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink  onClick={handleShow} to="tales" className="btn btn-menu">
+                <NavLink  onClick={handleShow} to="/demo-router/tales" className="btn btn-menu">
                   <div className="m-auto">Tales</div>
                   <div>
                     <IoSad/>
@@ -78,7 +95,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink  onClick={handleShow} to="contact" className="btn btn-menu">
+                <NavLink  onClick={handleShow} to="/demo-router/art" className="btn btn-menu">
                   <div className="m-auto">Art</div>
                   <div>
                   <IoMdBriefcase/>
@@ -86,7 +103,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink  onClick={handleShow} to="contact" className="btn btn-menu">
+                <NavLink  onClick={handleShow} to="/demo-router/email" className="btn btn-menu">
                   <div className="m-auto">Email</div>
                   <div>
                   <IoMailSharp/>

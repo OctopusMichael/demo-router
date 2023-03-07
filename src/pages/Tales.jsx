@@ -21,7 +21,6 @@ const Tales = () => {
               mute={muted}
             />
       <section>
-        <button onClick={handlerMuted} className="btn btn-primary boton-magic">  { muted ? <IoVolumeMuteSharp/> : <IoVolumeHighSharp/> } </button>
         <div className="container-fluid section-container-tales ">
           <div className="row">
             <div className="col-12 col-md-6 order-1 order-md-1 d-flex justify-content-center order-1">
@@ -89,6 +88,7 @@ const Tales = () => {
           </div>
         </div>
       </section>
+    <button onClick={handlerMuted} className="boton-magic2">  { muted ? <IoVolumeMuteSharp/> : <IoVolumeHighSharp/> } </button>
     </>
   );
 };

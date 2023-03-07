@@ -1,29 +1,38 @@
 import React from "react";
 import { createBrowserRouter } from "react-router-dom";
 import Root from "../layaout/Root";
-import Contact from "../pages/Contact";
+import Art from "../pages/Art";
+import Email from "../pages/Email";
 import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
 import Tales from "../pages/Tales";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/demo-router/",
     element: <Root />,
-    errorElement: <NotFound />,
     children: [
       {
         index: true,
-        path: "/",
+        path: "/demo-router/",
         element: <Home />,
       },
       {
-        path: "tales",
+        path: "/demo-router/tales",
         element: <Tales />,
       },
       {
-        path: "email",
-        element: <Contact />,
+        path: "/demo-router/ar",
+        element: <Art />,
+      },
+      {
+        path: "/demo-router/emai",
+        element: <Email />,
+        errorElement: <h1>Error</h1>,
+      },
+      {
+        path : "*" ,
+        element :<NotFound />,
       },
     ],
   },

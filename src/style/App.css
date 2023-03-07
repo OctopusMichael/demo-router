@@ -32,11 +32,44 @@ body {
   height: 300px;
   color: rgb(8, 218, 255) !important;
 }
-.first-log:hover {
-  width: 500px;
-  height: 500px;
-  color: rgb(8, 218, 255) !important;
-}
+  .boton-magic1{
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    color: white;
+    border:none;
+    z-index: 100;
+    transition: all 1s ease;
+    border-radius: 25px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+  .boton-magic1:hover{
+    background:#f03d78;
+  }
+  .boton-magic2{
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    color: white;
+    border:none;
+    z-index: 100;
+    transition: all 1s ease;
+    border-radius: 25px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+  }
+  .boton-magic2:hover{
+    background:#f03d78;
+  }
+
+
 
 .boton-intro {
   display: flex;
@@ -73,19 +106,20 @@ body {
 
 /**********      Navbar    ***********/
 
+
+
 .section-logo {
   margin-left: 10%;
 }
 
+
 .section-navbar {
-  background-image: url(https://media4.giphy.com/media/3oKIPwaiK7xSA4zUek/giphy.gif?cid=ecf05e47yapz8q315r9t1fdt0537r7rvdrd17vvh8vc04jqp&rid=giphy.gif&ct=g);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  
   display: flex;
   justify-content: center;
   align-items: center;
   height: 10vh;
+ 
 }
 .section-navbar img {
   height: 10vh;
@@ -182,20 +216,25 @@ li {
 }
 .first-title:hover {
   color: #08fcef !important;
+  margin-top: 30px;
 }
 .second-title {
   transition: all 1s ease;
+  margin-top: 30px !important;
 }
 .second-title:hover {
   color: #08fcef !important;
+  margin-top: 40px !important
 }
 .article {
-  margin-top: 20px;
+  overflow-y:auto;
   color: white;
   transition: all 1s ease;
+  margin-top: 20px;
+ 
 }
 .article:hover {
-  margin-top: 20px;
+  margin-top: 30px;
   color: rgb(21, 253, 222);
 }
 
@@ -210,7 +249,8 @@ li {
   text-align: start;
   color: white;
   padding: 10px 15px;
-  transition: all 0, 5s ease-in;
+  transition: all 1s ease;
+  margin-top: 10px;
 }
 .section-container-tales p:hover {
   color: rgb(8, 218, 255);
@@ -240,14 +280,13 @@ li {
 /* * * * * * * * * * * * * * * * * * Footer * * * * * * * * * * * * * *  */
 
 footer {
-  margin-top: 15px;
+  margin-top: 20px;
   height: 10vh;
   background-color: rgba(0, 0, 0, 0.445);
 }
 
-footer h5 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+footer h5 { 
+  font-size: 15px;
   color: white;
   display: flex;
   justify-content: center;
@@ -276,23 +315,9 @@ footer ul a:hover {
   margin: 0px 20px;
 }
 
-.btn-back {
-  background-color: aqua;
-  color: rgb(0, 0, 0);
-  width: 100px;
-  border-radius: 5px;
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 5px 20px;
-  height: 30px;
-}
 
-/* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {
-}
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {
-}
+
 
 /* Small Devices, Tablets */
 @media only screen and (min-width: 768px) {
@@ -314,21 +339,19 @@ footer ul a:hover {
     transition: all 2s ease;
     height: 50vh;
   }
+  .first-title:hover {
+    height: 100vh;
+    background-color: #f03d78;
+  }
   .second-title {
     height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all 2s ease;
+    transition: all 1s ease;
   }
 
-  .first-title:hover {
-    height: 100vh;
-
-    background-color: #f03d78;
-  }
   .second-title:hover {
-    justify-content: center;
     background-color: #fa548b;
   }
 
@@ -341,6 +364,8 @@ footer ul a:hover {
     transition: all 1s ease;
     padding: 100px;
     color: white;
+    overflow-y:auto;
+    padding: 50px  30px 0px 30px;
   }
   .article:hover {
     height: 100vh;
@@ -349,7 +374,11 @@ footer ul a:hover {
     align-items: center;
     font-size: 30px;
     background-color: #8b2849;
-    color: white;
+    color: aqua;
+  }
+  .article p{
+    font-size: 25px;
+
   }
 
   /* ****************** TALES PAGE**************** */
@@ -368,23 +397,23 @@ footer ul a:hover {
     align-items: center;
     height: 100%;
     width: 100%;
-    text-align: center;
-    padding: 100px;
+    text-align: start;
+    padding: 10px 100px 0px 200px;
   }
 
   .img-left {
     height: 50vh;
-    transition: all 0.5s ease;
+    transition: all 1s ease;
   }
   .img-left:hover {
-    height: 100vh;
+    height: 80vh;
   }
   .img-right {
     height: 50vh;
-    transition: all 0.5s ease;
+    transition: all 1s ease;
   }
   .img-right:hover {
-    height: 100vh;
+    height: 80vh;
   }
 
   .tales-title {
@@ -420,28 +449,34 @@ footer ul a:hover {
   .btn {
     background-color: transparent;
     border: none;
-    margin-right: 20px;
+    margin-right: 10px;
     width: 120px;
     color: white;
   }
+  
+
   .btn:hover {
-    background-color: black;
+    background-color:#fa548b;
     border: none;
-    margin-right: 20px;
     color: white;
   }
-  .btn:hover {
-    background-color: black;
-    border: none;
-    margin-right: 20px;
-    color: white;
-  }
+
+  /* * * * * * * * * * * * * * * * * * Footer * * * * * * * * * * * * * *  */
+
+footer {
+  margin-top: 25px;
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 0.445);
 }
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 992px) {
+footer h5 {
+  
+  font-size: 20px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Large Devices, Wide Screens */
-@media only screen and (min-width: 1200px) {
 }
+

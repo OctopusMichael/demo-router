@@ -1,14 +1,30 @@
-import React from "react";
+import React, {useState} from "react";
 import { Parallax } from "react-parallax";
 import handdown from "../images/nitish-goswami-cNA-klOAdfM-unsplash.jpg";
 import handup from "../images/nitish-goswami-0DrOxIiOu0Q-unsplash.jpg";
+import ReactHowler from "react-howler";
+import {IoVolumeMuteSharp, IoVolumeHighSharp } from "react-icons/io5";
+import homelofi from  "../music/homelofi.ogg"
 
 const Home = () => {
+
+  const [muted, setMuted] = useState(false);
+
+  const handlerMuted = () =>{
+    setMuted(!muted)
+  }
   return (
     
     <>
+     <ReactHowler
+              src={homelofi}
+              playing={true}
+              loop={true}
+              mute={muted}
+            />
       <section>
         <div className="container-fluid">
+        
           <div className="row">
             <div className="col-12 col-md-6">
               <h1 className="text-center text-white first-title">
@@ -30,7 +46,7 @@ const Home = () => {
                 <div className="content"></div>
               </Parallax>
             </div>
-            <div className="col-12 col-md-6  article">
+            <div className="col-12 col-md-6   article">
               <p className=" text-center">
                 {" "}
                 AI story generation is a fascinating and entertaining way to
@@ -45,6 +61,7 @@ const Home = () => {
                 exciting and engaging experience.
               </p>
             </div>
+               <button onClick={handlerMuted} className="boton-magic1">  { muted ? <IoVolumeMuteSharp/> : <IoVolumeHighSharp/> } </button>
           </div>
         </div>
       </section>
