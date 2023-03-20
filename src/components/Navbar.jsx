@@ -39,7 +39,7 @@ const Navbar = () => {
     <header>
       <div className="container-fluid section-navbar">
         <div className="section-logo ">
-        <NavLink to="/demo-router/"  >
+        <NavLink to="/"  >
           <img onClick={handleShow} className="logo mt-2  " src={logo} />
           </NavLink>
         </div>
@@ -50,20 +50,20 @@ const Navbar = () => {
           </button>
         </div>
         <div className="navbar-menu ms-auto ">
-          <NavLink  to="/demo-router/" style={({ isActive }) => isActive ? active : disactive} className="btn"
+          <NavLink  to="/" style={({ isActive }) => isActive ? active : disactive} className="btn"
           >
             Home  &nbsp; <IoHomeSharp/>
           </NavLink>
-          <NavLink to="/demo-router/tales"  style={({ isActive }) => isActive ? active : disactive} className="btn ">
+          <NavLink to="tales"style={({ isActive }) => isActive ? active : disactive} className="btn ">
             Tales &nbsp;
             <IoSad/>
           </NavLink>
-          <NavLink to="/demo-router/art"  style={({ isActive }) => isActive ? active : disactive} className="btn ">
+          <NavLink to="art"  style={({ isActive }) => isActive ? active : disactive} className="btn ">
             Art &nbsp;
             <IoMdBriefcase/>
             
           </NavLink>
-          <NavLink to="/demo-router/email"  style={({ isActive }) => isActive ? active : disactive} className="btn ">
+          <NavLink to="email"  style={({ isActive }) => isActive ? active : disactive} className="btn ">
             email &nbsp;
             <IoMailSharp/>
           </NavLink>
@@ -79,7 +79,7 @@ const Navbar = () => {
             <ul>
               <li>
                 {" "}
-                <NavLink  onClick={handleShow} to="/demo-router/" className="btn btn-menu">
+                <NavLink  onClick={handleShow} to="/" className="btn btn-menu">
                   <div className="m-auto">Home</div>
                   <div>
                     <IoHomeSharp />
@@ -87,7 +87,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink  onClick={handleShow} to="/demo-router/tales" className="btn btn-menu">
+                <NavLink  onClick={handleShow} to="tales" className="btn btn-menu">
                   <div className="m-auto">Tales</div>
                   <div>
                     <IoSad/>
@@ -95,7 +95,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink  onClick={handleShow} to="/demo-router/art" className="btn btn-menu">
+                <NavLink  onClick={handleShow} to="art" className="btn btn-menu">
                   <div className="m-auto">Art</div>
                   <div>
                   <IoMdBriefcase/>
@@ -103,7 +103,7 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink  onClick={handleShow} to="/demo-router/email" className="btn btn-menu">
+                <NavLink  onClick={handleShow} to="email" className="btn btn-menu">
                   <div className="m-auto">Email</div>
                   <div>
                   <IoMailSharp/>
